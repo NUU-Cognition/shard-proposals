@@ -1,0 +1,21 @@
+shard-spec: "0.1.0"
+version: "0.1.0"
+name: Proposals
+shorthand: prop
+description: Structured decision documents with formal review lifecycle
+dependencies:
+  - source: NUU-Cognition/shard-flint
+  - source: NUU-Cognition/shard-projects
+
+types:
+  - name: Proposal
+    source: type-prop-proposal.md
+
+install:
+  - source: (Dashboard) Proposals.md
+    dest: Mesh/(Dashboard) Proposals.md
+    mode: once
+
+folders:
+  - Mesh/Types/Proposals/
+  - Mesh/Archive/Proposals/
